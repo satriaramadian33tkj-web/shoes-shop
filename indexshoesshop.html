@@ -132,20 +132,23 @@
     </section>
 
     <section id="order">
-      <h2>Order Sekarang</h2>
-      <form onsubmit="alert('Terima kasih, pesanan Anda sudah diterima!'); return false;">
-        <input type="text" name="nama" placeholder="Nama Anda" required>
-        <input type="text" name="telepon" placeholder="Nomor Telepon" required>
-        <select name="produk" required>
-          <option value="">Pilih Produk</option>
-          <option value="sneakers">Sneakers Putih</option>
-          <option value="kulit">Sepatu Formal Kulit</option>
-          <option value="running">Running Shoes</option>
-        </select>
-        <textarea name="alamat" rows="3" placeholder="Alamat Pengiriman" required></textarea>
-        <button type="submit">Kirim Pesanan</button>
-      </form>
-    </section>
+  <h2>Order Sekarang</h2>
+  <form action="order.php" method="POST">
+    <input type="text" name="nama" placeholder="Nama Anda" required>
+    <input type="text" name="telepon" placeholder="Nomor Telepon" required>
+
+    <select name="menu" required>
+      <option value="">Pilih Produk</option>
+      <option value="sneakers">Sneakers Putih</option>
+      <option value="kulit">Sepatu Formal Kulit</option>
+      <option value="running">Running Shoes</option>
+    </select>
+
+    <textarea name="alamat" rows="3" placeholder="Alamat Pengiriman" required></textarea>
+
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</section>
 
     <section id="kontak">
       <h2>Kontak Kami</h2>
@@ -160,3 +163,4 @@
   </footer>
 </body>
 </html>
+
